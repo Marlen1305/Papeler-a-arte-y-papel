@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Papelería Arte & Papel - Página Mejorada</title>
+
+    <style>
+        /* -----------------------------
+           ESTILOS GENERALES DEL SITIO
+        ------------------------------*/
+
+        /* Restablece márgenes y define la fuente */
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe6f2, #ffd6ea);
+        }
+
+        /* -----------------------------
+           MENÚ SUPERIOR FIJO
+        ------------------------------*/
+        nav {
+            position: fixed; /* Menú siempre visible arriba */
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 0, 102, 0.9); /* Rosa con transparencia */
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del menú */
+            z-index: 1000; /* Siempre por encima del contenido */
+            backdrop-filter: blur(6px);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s; /* Animación suave */
+        }
+
+        nav a:hover {
+            color: #ffd1ec;
+            letter-spacing: 1px; /* Expande un poco las letras */
+        }
+
+        /* -----------------------------
+           ENCABEZADO / LOGO / TÍTULO
+        ------------------------------*/
+        header {
+            padding-top: 120px; /* Espacio para evitar que el menú tape el contenido */
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header img {
+            width: 180px;
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2)); /* Sombra suave del logo */
+        }
+
+        h1 {
+            color: #cc0052;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+        }
+
+        /* -----------------------------
+           ESTILO GENERAL DE SECCIONES
+        ------------------------------*/
+        section {
+            background: white;
+            margin: 40px auto;
+            padding: 40px;
+            width: 85%;
+            max-width: 950px;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra del recuadro */
+            animation: slideUp 1.2s ease;
+        }
+
+        h2,
+        h3 {
+            color: #ff007f;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Todas las imágenes dentro de sección */
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* -----------------------------
+           SUBMENÚ DE PRODUCTOS
+        ------------------------------*/
+        .submenu a {
+            display: inline-block;
+            background-color: #ff80b3;
+            padding: 12px 22px;
+            margin: 12px;
+            color: white;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .submenu a:hover {
+            transform: scale(1.1);
+            background-color: #ff4d94;
+        }
+
+        /* -----------------------------
+           PIE DE PÁGINA
+        ------------------------------*/
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #cc0052;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* -----------------------------
+           ANIMACIONES PARA EFECTOS
+        ------------------------------*/
+
+        /* Fade In */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Slide hacia arriba */
+        @keyframes slideUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes">Quiénes Somos</a>
+        <a href="#quehacemos">Qué Hacemos</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contáctanos</a>
+    </nav>
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header>
+        <img src="logo.jpg" alt="Logo Papelería Arte & Papel">
+        <h1>Papelería Arte & Papel</h1>
+    </header>
+
+    <!-- SECCIÓN: INICIO -->
+    <section id="inicio">
+        <h2>Bienvenidos</h2>
+        <p>Somos tu papelería de confianza con productos escolares, de oficina y servicios de impresión.</p>
+        <img src="inicio.jpg" alt="Inicio">
+    </section>
+
+    <!-- SECCIÓN: QUIÉNES SOMOS -->
+    <section id="quienes">
+        <h2>Quiénes Somos</h2>
+        <p>Arte & Papel nace con el objetivo de ofrecer un espacio accesible para estudiantes y familias que buscan artículos escolares y de oficina cerca de casa.</p>
+        <img src="quienes_somos.jpg" alt="Quiénes Somos">
+    </section>
+
+    <!-- SECCIÓN: QUÉ HACEMOS -->
+    <section id="quehacemos">
+        <h2>Qué Hacemos</h2>
+        <p>Proveemos artículos, servicios de copiado, impresión, escaneo, material de manualidades y más con calidad y buen trato.</p>
+        <img src="quehacemos.jpg" alt="Qué hacemos">
+    </section>
+
+    <!-- SECCIÓN: PRODUCTOS + SUBMENÚ -->
+    <section id="productos">
+        <h2>Productos</h2>
+        <p>Selecciona una categoría para ver colores, tamaños y precios.</p>
+
+        <!-- Submenú por categorías -->
+        <div class="submenu">
+            <a href="#cuadernos">Cuadernos</a>
+            <a href="#plumas">Plumas</a>
+            <a href="#colores">Colores</a>
+            <a href="#hojas">Hojas y Papel</a>
+            <a href="#manualidades">Manualidades</a>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: CUADERNOS -->
+    <section id="cuadernos">
+        <h3>Cuadernos</h3>
+        <img src="cuaderno.jpg" alt="Cuadernos">
+        <p><strong>Descripción:</strong> Cuadernos profesionales, escolares y rayados.</p>
+        <p><strong>Colores:</strong> Azul, rosa, verde.</p>
+        <p><strong>Tamaños:</strong> Profesional, media carta.</p>
+        <p><strong>Precio:</strong> $25 - $45 MXN.</p>
+    </section>
+
+    <!-- CATEGORÍA: PLUMAS -->
+    <section id="plumas">
+        <h3>Plumas</h3>
+        <img src="pluma.jpg" alt="Plumas">
+        <p><strong>Tipos:</strong> Gel, aceite, punta fina.</p>
+        <p><strong>Colores:</strong> Negro, azul, rojo, rosa, morado.</p>
+        <p><strong>Tamaños:</strong> 0.5, 0.7, 1.0 mm.</p>
+        <p><strong>Precio:</strong> $8 - $25 MXN.</p>
+    </section>
+
+    <!-- CATEGORÍA: COLORES -->
+    <section id="colores">
+        <h3>Colores</h3>
+        <img src="colores.jpg" alt="Colores">
+        <p><strong>Presentaciones:</strong> 12, 24 y 48 piezas.</p>
+        <p><strong>Precios:</strong> $20 - $120 MXN.</p>
+    </section>
+
+    <!-- CATEGORÍA: HOJAS -->
+    <section id="hojas">
+        <h3>Hojas y Papel</h3>
+        <img src="hojas.jpg" alt="Hojas y Papel">
+        <p><strong>Tipos:</strong> Blancas, recicladas, de colores, bond.</p>
+        <p><strong>Tamaños:</strong> Carta, oficio, doble carta.</p>
+        <p><strong>Precio:</strong> $3 - $120 MXN.</p>
+    </section>
+
+    <!-- CATEGORÍA: MANUALIDADES -->
+    <section id="manualidades">
+        <h3>Manualidades</h3>
+        <img src="foamy.jpg" alt="Manualidades">
+        <p><strong>Material:</strong> Foamy, fieltro, diamantina, cartulina.</p>
+        <p><strong>Precios:</strong> $5 - $40 MXN.</p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📍 Av. Las Flores #210, Col. Jardines del Valle, Toluca.</p>
+        <p>📞 Teléfono: <strong>722 456 7890</strong></p>
+        <img src="contacto.jpg" alt="Contacto">
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        © 2025 Papelería Arte & Papel.
+    </footer>
+
+</body>
+
+</html>
+
